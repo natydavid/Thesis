@@ -1,0 +1,168 @@
+Changing Vol with respect to first one, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	8778	4850	64.4115057235104
+[2.22,4.44,2.22] - A:79.02 - V:21.95	1304	10244	88.7080013855213
+
+
+Changing Vol with respect to first one, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	9723	3905	71.3457587320223
+[2.29,4.58,2.29] - A:83.74 - V:23.95	564	8130	93.5127674258109
+
+
+Changing Vol with respect to first one, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	10240	3388	75.1394188435574
+[2.35,4.70,2.35] - A:88.33 - V:25.94	438	10666	96.0554755043228
+
+
+Changing Vol with respect to first one, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	10652	2976	78.1626063985911
+[2.41,4.82,2.41] - A:92.80 - V:27.94	1089	10955	90.9581534373962
+
+
+Changing Vol with respect to first one, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	12087	1541	88.6923980041092
+[2.46,4.93,2.46] - A:97.17 - V:29.93	673	11749	94.5821928835936
+
+
+Changing Vol with respect to first one, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	12722	906	93.3519225124743
+[2.57,5.14,2.57] - A:105.63 - V:33.92	610	11994	95.1602665820375
+
+
+Changing Vol with respect to first one 1.9,2, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	13125	503	96.3090695626651
+[2.67,5.33,2.67] - A:113.75 - V:37.91	516	10044	95.1136363636364
+
+
+Changing Vol with respect to first one 1.9,2, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	13003	625	95.4138538303493
+[2.71,5.42,2.71] - A:117.71 - V:39.91	647	8737	93.1052855924979
+
+
+Changing Vol with respect to first one 2.5,3, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	13628	0	100
+[2.92,5.84,2.92] - A:136.59 - V:49.89	0	13350	100
+
+
+Changing Vol with respect to first one 2.5,3, rectangle shape , same beta
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	13628	0	100
+[3.10,6.21,3.10] - A:154.25 - V:59.87	0	13824	100
+
+
+1 Vol ,checking changes in the 2nd dim with respect to the 1st and 3rd dim 2, 2.5, 3, 3.5 , same beta
+
+   					room_1	room_2	success_prec
+[2.71,2.71,2.71] - A:44.14 - V:19.96	9982	1434	87.4386825508059
+[2.15,4.31,2.15] - A:74.15 - V:19.96	625	7933	92.6968917971489
+
+
+1 Vol ,checking changes in the 2nd dim with respect to the 1st and 3rd dim 2, 2.5, 3, 3.5 , same beta
+
+   					room_1	room_2	success_prec
+[2.71,2.71,2.71] - A:44.14 - V:19.96	10721	695	93.9120532585844
+[2.00,5.00,2.00] - A:89.86 - V:19.96	659	7173	91.5858018386108
+
+
+1 Vol ,checking changes in the 2nd dim with respect to the 1st and 3rd dim 2, 2.5, 3, 3.5 , same beta
+
+   					room_1	room_2	success_prec
+[2.71,2.71,2.71] - A:44.14 - V:19.96	10584	832	92.7119831814996
+[1.88,5.64,1.88] - A:106.11 - V:19.96	699	5755	89.1695072823055
+
+
+1 Vol ,checking changes in the 2nd dim with respect to the 1st and 3rd dim 2, 2.5, 3, 3.5 , same beta
+
+   					room_1	room_2	success_prec
+[2.71,2.71,2.71] - A:44.14 - V:19.96	10196	1220	89.3132445690259
+[1.79,6.25,1.79] - A:122.87 - V:19.96	413	5729	93.2758059264083
+
+
+1 Vol ,checking changes in the 2nd dim with respect to the 1st and 3rd dim 8 times , same beta
+
+   					room_1	room_2	success_prec
+[2.71,2.71,2.71] - A:44.14 - V:19.96	11401	15	99.8686054660126
+[1.36,10.85,1.36] - A:294.28 - V:19.96	1	2187	99.9542961608775
+
+
+1_to_4_ratio_rectangle - using rir estimation (4:1)
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	9158	0	100
+[3.42,6.83,3.42] - A:186.86 - V:79.82	0	10010	100
+
+
+Changing Vol with respect to first one 1.9,2, rectangle shape , same beta - using rir estimation (1.9:1)
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	8310	848	90.7403363179734
+[2.67,5.33,2.67] - A:113.75 - V:37.91	588	9972	94.4318181818182
+
+
+Changing Vol with respect to first one 1.9,2, rectangle shape , same beta - using rir estimation (2:1)
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	8155	1003	89.0478270364708
+[2.71,5.42,2.71] - A:117.71 - V:39.91	878	8506	90.6436487638534
+
+
+1_to_4_ratio_rectangle - using RTF (4:1)
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	4459	120	97.3793404673509
+[3.42,6.83,3.42] - A:186.86 - V:79.82	23	4982	99.5404595404595
+
+
+1_to_2_ratio_rectangle_cubical_base_40[m^3]-vol_check
+
+   					room_1	room_2	success_prec
+[3.42,3.42,3.42] - A:70.07 - V:39.91	12400	728	94.4546008531383
+[4.31,4.31,4.31] - A:111.23 - V:79.82	192	15884	98.8056730529983
+
+
+1_to_2_ratio_rectangle_cubical_base_40[m^3]-vol_check
+
+   					room_1	room_2	success_prec
+[2.71,5.42,2.71] - A:117.71 - V:39.91	15214	0	100
+[3.42,6.83,3.42] - A:186.86 - V:79.82	0	10022	100
+
+
+Changing Vol with respect to first one 2.5,3, rectangle shape , same beta_base_40[m^3]
+
+   					room_1	room_2	success_prec
+[2.71,5.42,2.71] - A:117.71 - V:39.91	15214	0	100
+[3.68,7.36,3.68] - A:216.83 - V:99.78	0	13346	100
+
+
+Changing Vol with respect to first one 2.5,3, rectangle shape , same beta_base_40[m^3]
+
+   					room_1	room_2	success_prec
+[2.71,5.42,2.71] - A:117.71 - V:39.91	15214	0	100
+[3.91,7.82,3.91] - A:244.85 - V:119.73	0	14796	100
+
+1_to_4_ratio_rectangle_cubical - using speech RTF
+
+   					room_1	room_2	success_prec
+[2.15,4.31,2.15] - A:74.15 - V:19.96	3139	1140	73.3582612759991
+[3.42,6.83,3.42] - A:186.86 - V:79.82	5484	2803	33.8240617835163
+
+
+
