@@ -30,6 +30,7 @@ room_rir_list = room_zero_pad( room_rir_list );
 %% transfering all data to one matrix to deliver to algorithm
 
 room_matrixs = cell(rooms_num,1);
+critical_distance_label_rooms = cell(rooms_num,1);
 points_num = zeros(1,rooms_num);
 for rr = 1:rooms_num
     for ss = 1:speaker_num
@@ -75,6 +76,8 @@ for rr = 1:rooms_num
                     room_matrixs{rr} = [room_matrixs{rr}; room_rir_list{rr}{ss,cc}];
                 end
             end
+            points_num = size(room_matrixs{rr},1);
+            critical_distance_label_rooms{rr} = cc*ones(points_num,1);
         end
     end
     points_num(rr) = size(room_matrixs{rr},1);
@@ -85,6 +88,7 @@ end
 
 label = [];
 feature = [];
+critical_distance_label = [];
 target_names = {};
 if floor(max(vargin.relative_part*points_num))<= min(points_num)
     min_points_num = floor(max(vargin.relative_part*points_num));
@@ -98,13 +102,15 @@ for rr = 1:rooms_num
             taken_idx = unidrnd(points_num(rr),[1 min_points_num]);
             points_num(rr) = min_points_num;
             room_matrixs{rr} = room_matrixs{rr}(taken_idx,:);
+            critical_distance_label_rooms{rr} = critical_distance_label_rooms{rr}(taken_idx,:);
         else
             taken_idx = unidrnd(points_num(rr),[1 vargin.relative_part*points_num(rr)]);
             points_num(rr) = vargin.relative_part*points_num(rr);
             room_matrixs{rr} = room_matrixs{rr}(taken_idx,:);
+            critical_distance_label_rooms{rr} = critical_distance_label_rooms{rr}(taken_idx,:);
         end
     end
-    
+    critical_distance_label = [critical_distance_label ; critical_distance_label_rooms{rr} ];
     label = [label ; (rr-1)*ones(points_num(rr),1)];
     feature = [feature ; room_matrixs{rr}];
     target_names = [target_names room_list(rr).roomDisc];
@@ -143,6 +149,7 @@ end
 % data.feature = feature(1:floor(0.1*points),:);
 % data.label = label(1:floor(0.1*points));
 data.label = label;
+data.critical_distance_label = critical_distance_label;
 data.points = points;
 data.target_names = target_names;
 
@@ -169,6 +176,7 @@ if isfield(vargin,'num_of_chunks')
             end_idx = ss*points_per_split;
             data.feature = feature(start_idx:end_idx,:);
             data.label = label(start_idx:end_idx);
+            data.critical_distance_label = critical_distance_label(start_idx:end_idx);
             data.points = points_per_split;
             save_name = [vargin.save_name '_chunk_' num2str(ss) '.mat'];
             save(save_name,'data');

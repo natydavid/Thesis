@@ -31,6 +31,8 @@ room_rir_list = room_squeeze( room_rir_list );
 
 % train data
 room_matrixs = cell(rooms_num,1);
+critical_distance_label = [];
+
 
 for rr = 1:rooms_num
     for ss = train_speaker_pos
@@ -40,6 +42,8 @@ for rr = 1:rooms_num
             else
                 room_matrixs{rr} = [room_matrixs{rr}; room_rir_list{rr}{ss,cc}];
             end
+            points_num = size(room_matrixs{rr},1);
+            critical_distance_label = [critical_distance_label ; cc*ones(points_num,1)];
         end
     end
 end
@@ -47,6 +51,7 @@ end
 label = [];
 feature = [];
 target_names = {};
+
 for rr = 1:rooms_num
     
     points_num = size(room_matrixs{rr},1);
@@ -88,6 +93,8 @@ end
 train_data.label = label;
 train_data.points = points;
 train_data.target_names = target_names;
+train_data.critical_distance_label = critical_distance_label;
+
 
 
 % test data
@@ -102,6 +109,8 @@ for rr = 1:rooms_num
             else
                 room_matrixs{rr} = [room_matrixs{rr}; room_rir_list{rr}{ss,cc}];
             end
+            points_num = size(room_matrixs{rr},1);
+            critical_distance_label = [critical_distance_label ; cc*ones(points_num,1)];
         end
     end
 end
@@ -141,6 +150,8 @@ else
 end
 test_data.label = label;
 test_data.points = points;
+test_data.critical_distance_label = critical_distance_label;
+
 
 %% saving models 
 
