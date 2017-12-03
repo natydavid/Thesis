@@ -69,15 +69,16 @@ for rr = 1:rooms_num
                 else
                     room_matrixs{rr} = [room_matrixs{rr}; temp_matrix];
                 end
+                nSamples = size(temp_matrix,1);
             else
                 if isempty(room_matrixs{rr})
                     room_matrixs{rr} = room_rir_list{rr}{ss,cc};
                 else
                     room_matrixs{rr} = [room_matrixs{rr}; room_rir_list{rr}{ss,cc}];
                 end
+                nSamples = size(room_rir_list{rr}{ss,cc},1);
             end
-            points_num = size(room_matrixs{rr},1);
-            critical_distance_label_rooms{rr} = cc*ones(points_num,1);
+            critical_distance_label_rooms{rr} = [critical_distance_label_rooms{rr} ; cc*ones(nSamples,1)];
         end
     end
     points_num(rr) = size(room_matrixs{rr},1);
